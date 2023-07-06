@@ -1,5 +1,4 @@
 import React from "react";
-import OfferBox from "../../Utils/OfferBox/OfferBox";
 
 function OfferSection() {
   const offers = [
@@ -17,7 +16,15 @@ function OfferSection() {
         <h2 className="headline-offer">Czym zajmuje się nasza firma?</h2>
         <div className="box-grid">
           {offers.map((offer, index) => (
-            <OfferBox key={index} title={offer.title} isNew={offer.isNew} />
+            <div className="box-offer" key={index}>
+              {offer.isNew && (
+                <>
+                  <p className="new-offer">{offer.title}</p>
+                  <div className="mini"></div>
+                </>
+              )}
+              {!offer.isNew && <>{offer.title}</>}
+            </div>
           ))}
         </div>
       </div>
