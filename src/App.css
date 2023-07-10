@@ -8,7 +8,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-nav {
+.navbar {
   height: 50px;
   background: #4e4e4e;
   display: flex;
@@ -67,7 +67,7 @@ button {
   color: #ffffff;
 }
 
-header {
+.header {
   height: 100vh;
   width: 100%;
   background: url("./Assets/background.jpg") center/cover no-repeat;
@@ -140,20 +140,13 @@ header {
   padding-bottom: 60px;
 }
 
-.member-one-photo,
-.member-two-photo {
+.member-photo {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   aspect-ratio: 1;
-}
-
-.member-one-photo {
-  background: url("./Assets/memberone.jpg") center/cover;
-}
-
-.member-two-photo {
-  background: url("./Assets/membertwo.jpg") center/cover;
+  background-position: center;
+  background-size: cover;
 }
 
 .box:nth-of-type(even) {
@@ -226,7 +219,7 @@ header {
   top: -10px;
 }
 
-footer {
+.footer {
   height: 71px;
   background: #4e4e4e;
   display: flex;
@@ -292,13 +285,14 @@ footer {
     display: none;
   }
 
-  footer {
+  .footer {
     height: 147px;
   }
   .footer-inside {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 10px;
   }
   .box,
@@ -328,7 +322,7 @@ footer {
   }
 
   .box-offer {
-    width: 330px;
-    height: 330px;
+    width: 280px;
+    height: 280px;
   }
 }

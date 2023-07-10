@@ -1,5 +1,7 @@
 import React from "react";
-import EmployeeRow from "../../Utils/EmployeeRow/EmployeeRow";
+import EmployeeRow from "../EmployeeRow/EmployeeRow";
+import memberone from "../../Assets/memberone.jpg";
+import membertwo from "../../Assets/membertwo.jpg";
 
 function AboutSection() {
   const employees = [
@@ -8,15 +10,14 @@ function AboutSection() {
       lastName: "Kowalska",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident dolores esse neque laboriosam consectetur quis inventore fugit blanditiis porro earum repudiandae, labore quae natus aspernatur, culpa nesciunt sequi nemo enim magni eligendi tempore delectus quidem? Culpa, quam eligendi! Unde optio expedita deserunt voluptatibus, totam minima saepe quae quia temporibus earum.",
-      photoUrl: "./Assets/memberone.jpg",
+      photoUrl: memberone,
     },
-
     {
       firstName: "Jan",
       lastName: "Kowalski",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident dolores esse neque laboriosam consectetur quis inventore fugit blanditiis porro earum repudiandae, labore quae natus aspernatur, culpa nesciunt sequi nemo enim magni eligendi tempore delectus quidem? Culpa, quam eligendi! Unde optio expedita deserunt voluptatibus, totam minima saepe quae quia temporibus earum.",
-      photoUrl: "./Assets/membertwo.jpg",
+      photoUrl: membertwo,
     },
   ];
 

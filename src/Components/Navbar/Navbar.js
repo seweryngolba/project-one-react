@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav>
+    <nav className="navbar">
       <div className="container nav-cont">
         <div className="navigation">
           <a className="company" href="index.html">
@@ -16,7 +16,7 @@ function Navbar() {
               <a href="#offer">oferta</a>
             </li>
             <li className="nav-offer">
-              <a className="disabled" href="">
+              <a className="disabled" href="/">
                 kontakt
               </a>
             </li>
